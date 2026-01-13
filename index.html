@@ -284,57 +284,448 @@
 
   <script>
     let allQuestions = [
-      { "sentence": "People M______ at the scientist’s unexpected invention.", "answers": ["marvel"], "meaning": ["amazing thing"] },
-      { "sentence": "She picked up the S______ of paper left on the floor.", "answers": ["scraps"], "meaning": ["fragments"] },
-      { "sentence": "The M______ model car fit in the palm of his hand.", "answers": ["midget"], "meaning": ["much smaller"] },
-      { "sentence": "It was a S______ revelation that changed history.", "answers": ["startling"], "meaning": ["very surprising"] },
-      { "sentence": "The archaeologist carefully studied the ancient S______.", "answers": ["skull"], "meaning": ["bone of head"] },
-      { "sentence": "Doctors found a case of M______ in the remote village.", "answers": ["microcephaly"], "meaning": ["head disease"] },
-      { "sentence": "The new evidence D______ the previous theory.", "answers": ["discredit"], "meaning": ["prove false"] },
-      { "sentence": "A new idea E______ during the discussion.", "answers": ["emerged"], "meaning": ["appeared"] },
-      { "sentence": "He felt C______ by too many responsibilities.", "answers": ["cumbered"], "meaning": ["hinder"] },
-      { "sentence": "She ran F______ than anyone else in her class.", "answers": ["faster"], "meaning": ["make it faster"] },
-      { "sentence": "He tends to P______ his thoughts without thinking.", "answers": ["pen"], "meaning": ["write carelessly"] },
-      { "sentence": "\"Because of A______, she felt weak and dizzy.\"", "answers": ["anemia"], "meaning": ["physical or mental suffering"] },
-      { "sentence": "She enjoys doing D______ chores like cooking.", "answers": ["domestic"], "meaning": ["relating to the running of a home"] },
-      { "sentence": "A strange figure was L______ in the shadows.", "answers": ["lurking"], "meaning": ["remaining hidden so as to wait in ambush"] },
-      { "sentence": "The robot looked almost H______ in its design.", "answers": ["humanoid"], "meaning": ["looks like a human"] },
-      { "sentence": "He spent the weekend visiting his K______ in the countryside.", "answers": ["kin"], "meaning": ["one’s family or relations"] },
-      { "sentence": "Please P______ the vase carefully on the shelf.", "answers": ["position"], "meaning": ["put in position/place"] },
-      { "sentence": "The internet rumor turned out to be a H______.", "answers": ["hoax"], "meaning": ["deceive someone"] },
-      { "sentence": "Drinking tea after work became a daily H______.", "answers": ["habit"], "meaning": ["tiny guy"] },
-      { "sentence": "Even his harshest D______ admitted he worked hard.", "answers": ["detractor"], "meaning": ["a person who criticizes you"] },
-      { "sentence": "The toys were S______ across the room.", "answers": ["scattered"], "meaning": ["dispersed"] },
-      { "sentence": "The map clearly D______ the path to the village.", "answers": ["delineated"], "meaning": ["to describe or explain something clearly"] },
-      { "sentence": "She decided to E______ the new culture during her travels.", "answers": ["embrace"], "meaning": ["accept/hug"] },
-      { "sentence": "His speech I______ the students to take action.", "answers": ["instigated"], "meaning": ["encourage something"] },
-      { "sentence": "Rainwater has been A______ on the rooftop.", "answers": ["accumulating"], "meaning": ["increasing"] },
-      { "sentence": "The mountains were barely D______ in the fog.", "answers": ["discernible"], "meaning": ["individually identifiable"] },
-      { "sentence": "She has a B______ knowledge of world history.", "answers": ["broad"], "meaning": ["large/vast"] },
-      { "sentence": "The pool is too S______ for diving.", "answers": ["shallow"], "meaning": ["not deep"] },
-      { "sentence": "He kept B______ for another chance to explain himself.", "answers": ["begging"], "meaning": ["asking for something"] },
-      { "sentence": "He had R______ his emotions for years.", "answers": ["repressed"], "meaning": ["restrained"] },
-      { "sentence": "Your comments are not R______ to the topic.", "answers": ["relevant"], "meaning": ["pertinent"] },
-      { "sentence": "Rust is a common result of metal C______.", "answers": ["corrosion"], "meaning": ["the gradual destruction of materials (usually metal) by chemical reaction"] },
-      { "sentence": "Each I______ of the island has unique traditions.", "answers": ["inhabitant"], "meaning": ["halitante (French for resident)"] },
-      { "sentence": "The nurse took care of the N______ in the hospital.", "answers": ["neonate"], "meaning": ["newborn"] },
-      { "sentence": "His argument was O______ and lacked evidence.", "answers": ["overgeneralized"], "meaning": ["too generalized"] },
-      { "sentence": "The garden looked N______ after months without care.", "answers": ["neglected"], "meaning": ["abandoned"] },
-      { "sentence": "It’s a P______ that silence can sometimes be powerful.", "answers": ["paradox"], "meaning": ["a situation that can contain hidden truth"] },
-      { "sentence": "They tried to S______ rare goods across the border.", "answers": ["smuggle"], "meaning": ["pass secretly"] },
-      { "sentence": "She remained R______ even after facing many failures.", "answers": ["resilient"], "meaning": ["recover quickly from difficult conditions"] },
-      { "sentence": "He followed a R______ schedule to prepare for the exam.", "answers": ["rigorous"], "meaning": ["severe"] },
-      { "sentence": "The plane was D______ to another airport due to weather.", "answers": ["diverted"], "meaning": ["changed direction"] },
-      { "sentence": "Their financial situation is quite P______ right now.", "answers": ["precarious"], "meaning": ["unstable"] },
-      { "sentence": "She summarized the report’s most S______ points.", "answers": ["salient"], "meaning": ["noticeable main points"] },
-      { "sentence": "The plan was F______ and needed improvement.", "answers": ["flawed"], "meaning": ["characterized by weakness or imperfection"] },
-      { "sentence": "That chemical is L______ if inhaled in large amounts.", "answers": ["lethal"], "meaning": ["able to cause death; extremely dangerous"] },
-      { "sentence": "He is A______ in his belief that honesty is essential.", "answers": ["adamant"], "meaning": ["impossible to change an opinion"] },
-      { "sentence": "The forest showed signs of long human I______.", "answers": ["inhabitation"], "meaning": ["a place where a person or animal lives"] },
-      { "sentence": "The movie’s ending was deeply S______ and emotional.", "answers": ["stirring"], "meaning": ["causing strong emotion"] },
-      { "sentence": "She D______ people who judge others unfairly.", "answers": ["despised"], "meaning": ["deep repugnance"] },
-      { "sentence": "It was a M______ coincidence that they met again.", "answers": ["mere"], "meaning": ["\"pure and simple, nothing more\""] }
-    ];
+  {
+    "sentence": "The scientist p________ a new method of treating the disease in the 1990s.",
+    "answers": [
+      "pioneered"
+    ],
+    "meaning": [
+      "developed"
+    ]
+  },
+  {
+    "sentence": "To f________ any arguments, she prepared all the evidence in advance.",
+    "answers": [
+      "forestall"
+    ],
+    "meaning": [
+      "prevent"
+    ]
+  },
+  {
+    "sentence": "My parents f_____ me from staying out late on school nights.",
+    "answers": [
+      "forbid"
+    ],
+    "meaning": [
+      "refuse to allow"
+    ]
+  },
+  {
+    "sentence": "The police discovered a large amount of c__________ money in the apartment.",
+    "answers": [
+      "counterfeit"
+    ],
+    "meaning": [
+      "imitation, forgery"
+    ]
+  },
+  {
+    "sentence": "I taught my dog to f____ the stick whenever I throw it.",
+    "answers": [
+      "fetch"
+    ],
+    "meaning": [
+      "go and get"
+    ]
+  },
+  {
+    "sentence": "The government announced the i_______ of new passports starting next month.",
+    "answers": [
+      "issuance"
+    ],
+    "meaning": [
+      "the action of supplying or distributing something"
+    ]
+  },
+  {
+    "sentence": "The company needs tighter f_____ c______ to avoid going bankrupt.",
+    "answers": [
+      "fiscal control"
+    ],
+    "meaning": [
+      "control of budget"
+    ]
+  },
+  {
+    "sentence": "The new software is fully i_________ with our existing systems.",
+    "answers": [
+      "integrated"
+    ],
+    "meaning": [
+      "connected"
+    ]
+  },
+  {
+    "sentence": "He d______ the moment he had to give his speech to the large crowd.",
+    "answers": [
+      "dreaded"
+    ],
+    "meaning": [
+      "regarded with great fear or apprehension"
+    ]
+  },
+  {
+    "sentence": "The hikers encountered a f_____ storm while climbing the mountain.",
+    "answers": [
+      "fierce"
+    ],
+    "meaning": [
+      "very savage or vicious"
+    ]
+  },
+  {
+    "sentence": "We e__________ several problems while trying to install the program.",
+    "answers": [
+      "encountered"
+    ],
+    "meaning": [
+      "ran into (something hostile or difficult)"
+    ]
+  },
+  {
+    "sentence": "The bird's c______ protect the base of its flight feathers.",
+    "answers": [
+      "coverts"
+    ],
+    "meaning": [
+      "a feather covering the base of a main flight feather"
+    ]
+  },
+  {
+    "sentence": "We saw large h____ of elephants crossing the plains during our safari.",
+    "answers": [
+      "herds"
+    ],
+    "meaning": [
+      "large groups of animals that live together"
+    ]
+  },
+  {
+    "sentence": "The starving dog ate the food g_______.",
+    "answers": [
+      "greedily"
+    ],
+    "meaning": [
+      "in a way that shows an excessive desire for food"
+    ]
+  },
+  {
+    "sentence": "Her u________ enthusiasm for the project motivated the whole team.",
+    "answers": [
+      "unbridled"
+    ],
+    "meaning": [
+      "uncontrolled"
+    ]
+  },
+  {
+    "sentence": "The r_______ wolves circled the campsite looking for food.",
+    "answers": [
+      "ravening"
+    ],
+    "meaning": [
+      "extremely hungry"
+    ]
+  },
+  {
+    "sentence": "The cost of the repairs should not e_____ one hundred dollars.",
+    "answers": [
+      "exceed"
+    ],
+    "meaning": [
+      "be more than"
+    ]
+  },
+  {
+    "sentence": "There was an e____ silence in the empty house at night.",
+    "answers": [
+      "eerie"
+    ],
+    "meaning": [
+      "strange and frightening"
+    ]
+  },
+  {
+    "sentence": "The dark clouds were a h________ of the approaching storm.",
+    "answers": [
+      "harbinger"
+    ],
+    "meaning": [
+      "indicator"
+    ]
+  },
+  {
+    "sentence": "This painting t_______ the artist's unique style and use of color.",
+    "answers": [
+      "typifies"
+    ],
+    "meaning": [
+      "epitomizes"
+    ]
+  },
+  {
+    "sentence": "He spends an i_________ amount of time playing video games.",
+    "answers": [
+      "inordinate"
+    ],
+    "meaning": [
+      "excessive"
+    ]
+  },
+  {
+    "sentence": "The teacher tries to f_____ a sense of creativity in her students.",
+    "answers": [
+      "foster"
+    ],
+    "meaning": [
+      "encourage"
+    ]
+  },
+  {
+    "sentence": "They are currently d_______ for oil in the ocean.",
+    "answers": [
+      "drilling"
+    ],
+    "meaning": [
+      "the action of making holes"
+    ]
+  },
+  {
+    "sentence": "A crowd of o________ gathered to watch the street performer.",
+    "answers": [
+      "onlookers"
+    ],
+    "meaning": [
+      "people who watch an event or activity without participating"
+    ]
+  },
+  {
+    "sentence": "He has a habit of h_______ old newspapers that he never reads.",
+    "answers": [
+      "hoarding"
+    ],
+    "meaning": [
+      "the practice of accumulating and hiding goods or resources"
+    ]
+  },
+  {
+    "sentence": "The dress was l______ fitted, making it very comfortable to wear.",
+    "answers": [
+      "loosely"
+    ],
+    "meaning": [
+      "not firmly or tightly fixed"
+    ]
+  },
+  {
+    "sentence": "We decided to c__________ our debts into one monthly payment.",
+    "answers": [
+      "consolidate"
+    ],
+    "meaning": [
+      "combine"
+    ]
+  },
+  {
+    "sentence": "She gave a p____ summary of the book that captured its main points perfectly.",
+    "answers": [
+      "pithy"
+    ],
+    "meaning": [
+      "concise and expressive"
+    ]
+  },
+  {
+    "sentence": "Warm air rises due to c_________, circulating heat around the room.",
+    "answers": [
+      "convection"
+    ],
+    "meaning": [
+      "heat transfer by movement of fluid"
+    ]
+  },
+  {
+    "sentence": "The narrator in the story is o_________, knowing what every character thinks.",
+    "answers": [
+      "omniscient"
+    ],
+    "meaning": [
+      "knowing everything"
+    ]
+  },
+  {
+    "sentence": "He s____ o__ his disappointment and focused on the next match.",
+    "answers": [
+      "shook off"
+    ],
+    "meaning": [
+      "got rid of something"
+    ]
+  },
+  {
+    "sentence": "Mosquitoes often breed in s_______ water that doesn't move.",
+    "answers": [
+      "stagnant"
+    ],
+    "meaning": [
+      "unmoving"
+    ]
+  },
+  {
+    "sentence": "Although they look different, the two cars are e__________ the same machine.",
+    "answers": [
+      "essentially"
+    ],
+    "meaning": [
+      "basically"
+    ]
+  },
+  {
+    "sentence": "Many animals are very protective of their o________.",
+    "answers": [
+      "offspring"
+    ],
+    "meaning": [
+      "children"
+    ]
+  },
+  {
+    "sentence": "The younger dog was s_________ to the older, more dominant one.",
+    "answers": [
+      "submissive"
+    ],
+    "meaning": [
+      "avoiding taking the lead; following others"
+    ]
+  },
+  {
+    "sentence": "The signal was lost due to i___________ from the storm.",
+    "answers": [
+      "interference"
+    ],
+    "meaning": [
+      "the intervention of"
+    ]
+  },
+  {
+    "sentence": "Security was h_________ at the airport following the threat.",
+    "answers": [
+      "heightened"
+    ],
+    "meaning": [
+      "more intense than usual"
+    ]
+  },
+  {
+    "sentence": "He received c___________ damages for the injury he suffered at work.",
+    "answers": [
+      "compensatory"
+    ],
+    "meaning": [
+      "a recompense for someone who has experienced loss"
+    ]
+  },
+  {
+    "sentence": "Bears will f_____ for berries and nuts before winter arrives.",
+    "answers": [
+      "forage"
+    ],
+    "meaning": [
+      "search widely for food or provisions"
+    ]
+  },
+  {
+    "sentence": "The country enjoyed a period of peace and p_________ after the war.",
+    "answers": [
+      "prosperity"
+    ],
+    "meaning": [
+      "wealth, success"
+    ]
+  },
+  {
+    "sentence": "The surgeon s_________ performed the delicate operation.",
+    "answers": [
+      "skillfully"
+    ],
+    "meaning": [
+      "with skill"
+    ]
+  },
+  {
+    "sentence": "The new contract gives us g______ s____ to expand our business.",
+    "answers": [
+      "greater scope"
+    ],
+    "meaning": [
+      "a larger range or opportunity for action"
+    ]
+  },
+  {
+    "sentence": "The dancer will d_____ the audience with her amazing performance.",
+    "answers": [
+      "dazzle"
+    ],
+    "meaning": [
+      "impress or surprise someone greatly"
+    ]
+  },
+  {
+    "sentence": "Dangers can l___ in the deep ocean where it is dark.",
+    "answers": [
+      "lurk"
+    ],
+    "meaning": [
+      "remain hidden to wait in ambush"
+    ]
+  },
+  {
+    "sentence": "She rejected the proposal o_______ without even reading it.",
+    "answers": [
+      "outright"
+    ],
+    "meaning": [
+      "completely entirely"
+    ]
+  },
+  {
+    "sentence": "They plan to s________ the large field into smaller garden plots.",
+    "answers": [
+      "subdivide"
+    ],
+    "meaning": [
+      "divide something already divided"
+    ]
+  },
+  {
+    "sentence": "We must c______ our spending if we want to save money.",
+    "answers": [
+      "curtail"
+    ],
+    "meaning": [
+      "reduce; cut"
+    ]
+  },
+  {
+    "sentence": "It is unfair to d_______ the opposition just because you disagree with them.",
+    "answers": [
+      "demonize"
+    ],
+    "meaning": [
+      "diabolize"
+    ]
+  },
+  {
+    "sentence": "Please make sure to arrive at the station ten minutes p____ t_ departure.",
+    "answers": [
+      "prior to"
+    ],
+    "meaning": [
+      "earlier, previous to"
+    ]
+  }   
+     ];
 
     allQuestions.forEach(q => {
       // Correctly replace the blank hint (e.g., "M______") with the full answer to create the translation.
